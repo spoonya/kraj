@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  block head
+    head
+      meta(charset="utf-8")
+      meta(name="description" content="descrip")
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+      link(rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico")
+
+      link(rel="stylesheet" href="assets/css/style.css")
+
+      block title
+        title Gulp starter
+  body
+    include ../mixins/common
+    .page
+      block header
+        include ../blocks/header
+      block content
+      block footer
+        include ../blocks/footer
+    block scripts
+      include ../scripts/scripts
