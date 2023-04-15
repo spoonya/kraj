@@ -53,7 +53,7 @@ select {
   }
 
   &:focus-within {
-    border-color: var(--brand-alpha);
+    border-color: $cl-brand-alpha;
   }
 }
 
@@ -61,7 +61,7 @@ input,
 textarea {
   font: inherit;
 
-  color: var(--dark-alpha);
+  color: $cl-dark-alpha;
 
   border: none;
   background: none;
@@ -77,7 +77,7 @@ input[type='button'] {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  color: var(--dark-alpha);
+  color: $cl-dark-alpha;
 }
 
 button {
@@ -110,29 +110,28 @@ html {
   scroll-behavior: smooth;
 
   font-size: 62.5%;
-
-  --brand-alpha: #ff3465;
-  --dark-alpha: #000000;
-  --light-alpha: #ffffff;
-  --hover-alpha: rgba(255, 255, 255, 0.7);
-  --outline: #4d90fe;
-
-  --font-primary: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: var(--font-primary);
+  font-family: $font-primary;
   font-size: 1.6rem;
 
   margin: 0;
 
-  color: var(--dark-alpha);
-  background-color: var(--light-alpha);
+  color: $cl-dark-alpha;
+  background-color: $cl-light-alpha;
 }
 
 html,
 body {
   height: 100%;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .page {

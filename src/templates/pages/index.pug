@@ -5,3 +5,14 @@ block content
     section.intro(style="background-image: url(assets/img/jpg/intro.jpg)")
       .container
         .intro__inner
+          .intro__descrip
+            .intro__titles
+              h1.intro__title New platform for managing your business expenses
+            .intro__buttons
+              a.button.intro__button(href="#") Try it Now
+              button.button-round(type="button")
+                .button-round__styled
+                  +icon('button-round__icon', 'play')
+                span.button-round__label How it Works
+          .intro__img
+            img(src="assets/img/png/intro.png", width="835" height="676" alt="")

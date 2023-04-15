@@ -1,6 +1,8 @@
 .intro {
   position: relative;
 
+  height: 100vh;
+
   padding: 20rem 0;
 
   background-position: center;
@@ -17,4 +19,45 @@
     background-image: linear-gradient(180deg, #3f48c4 0%, #55a0e0 100%);
     opacity: 0.85;
   }
+}
+
+.intro__inner {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro__descrip {
+  margin-right: 5rem;
+  max-width: 50.6rem;
+}
+
+.intro__titles {
+  margin-bottom: 3rem;
+}
+
+.intro__title {
+  color: $cl-light-alpha;
+  font-size: 3.8rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.intro__buttons {
+  display: flex;
+  align-items: stretch;
+}
+
+.intro__button {
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.intro__img {
+  max-width: 83.5rem;
+  width: 100%;
 }

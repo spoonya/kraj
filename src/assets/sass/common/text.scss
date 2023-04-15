@@ -1,7 +1,7 @@
 .text {
   font-size: 16px;
   line-height: 150%;
-  color: var(--black-beta);
+  color: $cl-dark-alpha;
 
   p:not(:last-child) {
     margin-bottom: 15px;

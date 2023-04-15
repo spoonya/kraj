@@ -29,19 +29,7 @@ module.exports = function styles() {
       })
     )
     .pipe(shorthand())
-    .pipe(
-      cleanCSS(
-        {
-          debug: true,
-          compatibility: '*'
-        },
-        (details) => {
-          console.log(
-            `${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`
-          );
-        }
-      )
-    )
+    .pipe(cleanCSS())
     .pipe(mediaGroup())
     .pipe(gulp.dest('build/assets/css'));
 };

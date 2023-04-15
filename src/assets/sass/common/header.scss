@@ -3,19 +3,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 4;
 }
 
 .header__inner {
-  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 0;
 }
 
-.navbar .nav-link {
-  border-bottom: 1px solid transparent;
+.header__left {
+  display: flex;
+  align-items: center;
+}
 
-  transition: border-color 0.1s linear;
-
-  &:hover {
-    border-color: var(--light-alpha);
-  }
+.header__logo {
+  margin-right: 5rem;
 }

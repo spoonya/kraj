@@ -1,14 +1,21 @@
 .menu {
   ul {
+    display: flex;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 
   a {
-    color: var(--light-alpha);
+    color: $cl-light-alpha;
 
     transition: color 0.1s linear;
 
     &:hover {
-      color: var(--hover-alpha);
+      color: $cl-brand-alpha;
     }
   }
 }

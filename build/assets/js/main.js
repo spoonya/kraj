@@ -90,23 +90,10 @@
 /*!*******************************!*\
   !*** ./src/assets/js/main.js ***!
   \*******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test.js */ \"./src/assets/js/test.js\");\n\nObject(_test_js__WEBPACK_IMPORTED_MODULE_0__[\"test\"])();\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
-
-/***/ }),
-
-/***/ "./src/assets/js/test.js":
-/*!*******************************!*\
-  !*** ./src/assets/js/test.js ***!
-  \*******************************/
-/*! exports provided: test */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"test\", function() { return test; });\nfunction test() {\n  console.log('test');\n}\n\n//# sourceURL=webpack:///./src/assets/js/test.js?");
+eval("\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
 
 /***/ })
 
