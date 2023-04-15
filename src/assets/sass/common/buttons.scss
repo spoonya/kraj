@@ -1,6 +1,7 @@
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   border-radius: 50px;
   background-color: $cl-brand-alpha;
@@ -15,6 +16,12 @@
 
   &:hover {
     background-color: darken($cl-brand-alpha, 8);
+  }
+
+  &--secondary {
+    border-radius: 3px;
+    padding-left: em(48);
+    padding-right: em(48);
   }
 }
 

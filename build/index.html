@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Главная</title>
   </head>
@@ -20,8 +21,8 @@
         <div class="container">
           <div class="header__inner">
             <div class="header__left">
-              <a class="logo header__logo" href="index.html">
-                <img src="assets/img/png/logo.png" alt="">
+              <a class="logo header__logo" href="index.html" aria-label="home">
+                <img src="assets/img/png/logo.png" width="81" height="15" alt="">
               </a>
               <nav class="menu">
                 <ul class="list-reset">
@@ -112,10 +113,10 @@
         <section class="feature section section-border">
           <div class="container">
             <div class="feature__inner">
-              <div class="feature__img">
+              <div class="feature__img" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/img/jpg/feature-1.jpg" width="570" height="377" alt="" loading="lazy">
               </div>
-              <div class="feature__descrip">
+              <div class="feature__descrip" data-aos="fade-left" data-aos-duration="1000">
                 <h2 class="title feature__title">Intuitive interface for collaboration</h2>
                 <div class="feature__text">
                   <p>Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme is a breeze. Our Theme is a very slick and clean e-commerce template with endless possibilities.</p>
@@ -127,10 +128,10 @@
         <section class="feature feature--reverse section section-border">
           <div class="container">
             <div class="feature__inner">
-              <div class="feature__img">
+              <div class="feature__img" data-aos="fade-left" data-aos-duration="1000">
                 <img src="assets/img/jpg/feature-2.jpg" width="570" height="377" alt="" loading="lazy">
               </div>
-              <div class="feature__descrip">
+              <div class="feature__descrip" data-aos="fade-right" data-aos-duration="1000">
                 <h2 class="title feature__title">Operate the software in real time from any device</h2>
                 <div class="feature__text">
                   <p>Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme is a breeze. Our Theme is a very slick and clean e-commerce template with endless possibilities.</p>
@@ -139,7 +140,7 @@
             </div>
           </div>
         </section>
-        <section class="gains section section-border">
+        <section class="gains section">
           <div class="container">
             <div class="gains__inner">
               <ul class="list-reset gains__list">
@@ -169,13 +170,132 @@
             </div>
           </div>
         </section>
+        <section class="trial section" style="background-image: url(assets/img/jpg/newsletter-bg.jpg)">
+          <div class="container">
+            <div class="trial__inner">
+              <div class="trial__descrip">
+                <h2 class="title trial__title">Ready to start a free 14 days trial?</h2>
+                <div class="trial__text">
+                  <p>Create an account now and generate more leads</p>
+                </div>
+              </div>
+              <form class="trial__form">
+                <input class="input trial__input" type="email" placeholder="Your email address">
+                <button class="button button--secondary trial__submit" type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container">
-          <div class="footer__inner"></div>
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__top-inner">
+              <nav class="footer__menu">
+                <ul class="list-reset footer__menu-list">
+                  <li><a href="#">About us</a>
+                  </li>
+                  <li><a href="#">Pricing</a>
+                  </li>
+                  <li><a href="#">Blog</a>
+                  </li>
+                  <li><a href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="socials">
+                <ul class="list-reset socials__list">
+                  <li class="socials__item">
+                    <a href="#" target="_blank" rel="noopeer noreferrer" aria-label="facebook">
+                      <div class="socials__icon">
+                        <svg>
+                          <use xlink:href="assets/img/svg/sprite.svg#fb"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" target="_blank" rel="noopeer noreferrer" aria-label="twitter">
+                      <div class="socials__icon">
+                        <svg>
+                          <use xlink:href="assets/img/svg/sprite.svg#twitter"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" target="_blank" rel="noopeer noreferrer" aria-label="linkedin">
+                      <div class="socials__icon">
+                        <svg>
+                          <use xlink:href="assets/img/svg/sprite.svg#linkedin"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" target="_blank" rel="noopeer noreferrer" aria-label="instagram">
+                      <div class="socials__icon">
+                        <svg>
+                          <use xlink:href="assets/img/svg/sprite.svg#insta"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__mid">
+          <div class="container">
+            <div class="footer__mid-inner">
+              <div class="footer__info footer__mid-item">
+                <a class="logo footer__logo" href="index.html" aria-label="home">
+                  <img src="assets/img/png/logo.png" width="81" height="15" alt="" loading="lazy">
+                </a>
+                <div class="footer__descrip">
+                  <p>Emaus is a premium Elementor WordPress theme for Startups, Mobile Apps, eBook publishers, Entrepreneurs, SaaS websites and Digital Agencies.</p>
+                </div><address class="footer__address">243 Wythe Ave #7, Brooklyn, NY 11250, USA</address>
+              </div>
+              <nav class="footer__mid-menu footer__mid-item">
+                <ul class="list-reset footer__mid-menu-list">
+                  <li class="footer__mid-menu-item"><strong class="footer__mid-menu-label" href="#">Product</strong>
+                    <ul class="list-reset footer__mid-menu-sublist">
+                      <li class="footer__mid-menu-subitem"><a class="footer__mid-menu-sublink" href="#">About</a>
+                      </li>
+                      <li class="footer__mid-menu-subitem"><a class="footer__mid-menu-sublink" href="#">Features</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer__mid-menu-item"><strong class="footer__mid-menu-label" href="#">For teams</strong>
+                    <ul class="list-reset footer__mid-menu-sublist">
+                      <li class="footer__mid-menu-subitem"><a class="footer__mid-menu-sublink" href="#">Pricig</a>
+                      </li>
+                      <li class="footer__mid-menu-subitem"><a class="footer__mid-menu-sublink" href="#">About Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__sub footer__mid-item"><strong class="footer__sub-title">Stay Connected</strong>
+                <div class="footer__descrip">
+                  <p>The latest Emaus news, articles, and resources, sent straight to your inbox every month.</p>
+                </div>
+                <form class="footer__form">
+                  <input class="input footer__form-input" type="email" placeholder="Your email adderss">
+                  <button class="button button--secondary footer__form-button" type="submit">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot">
+          <div class="container"><span class="footer__copyright">&copy; 2023 Emaus, Made by DeoThemes</span>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 

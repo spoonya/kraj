@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
+eval("AOS.init({\n  once: true\n});\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
 
 /***/ })
 

@@ -1,3 +1,69 @@
 footer.footer
-  .container
-    .footer__inner
+  .footer__top
+    .container
+      .footer__top-inner
+        nav.footer__menu
+          ul.list-reset.footer__menu-list
+            li
+              a(href="#") About us
+            li
+              a(href="#") Pricing
+            li
+              a(href="#") Blog
+            li
+              a(href="#") Contact
+        .socials
+          ul.list-reset.socials__list
+            li.socials__item
+              a(href="#" target="_blank" rel="noopeer noreferrer" aria-label="facebook")
+                .socials__icon
+                  +icon('', 'fb')
+            li.socials__item
+              a(href="#" target="_blank" rel="noopeer noreferrer" aria-label="twitter")
+                .socials__icon
+                  +icon('', 'twitter')
+            li.socials__item
+              a(href="#" target="_blank" rel="noopeer noreferrer" aria-label="linkedin")
+                .socials__icon
+                  +icon('', 'linkedin')
+            li.socials__item
+              a(href="#" target="_blank" rel="noopeer noreferrer" aria-label="instagram")
+                .socials__icon
+                  +icon('', 'insta')
+
+  .footer__mid
+    .container
+      .footer__mid-inner
+        .footer__info.footer__mid-item
+          a.logo.footer__logo(href="index.html" aria-label="home")
+            img(src="assets/img/png/logo.png", width="81" height="15" alt="" loading="lazy")
+          .footer__descrip
+            p Emaus is a premium Elementor WordPress theme for Startups, Mobile Apps, eBook publishers, Entrepreneurs, SaaS websites and Digital Agencies.
+          address.footer__address 243 Wythe Ave #7, Brooklyn, NY 11250, USA
+        nav.footer__mid-menu.footer__mid-item
+          ul.list-reset.footer__mid-menu-list
+            li.footer__mid-menu-item
+              strong.footer__mid-menu-label(href="#") Product
+              ul.list-reset.footer__mid-menu-sublist
+                li.footer__mid-menu-subitem
+                  a.footer__mid-menu-sublink(href="#") About
+                li.footer__mid-menu-subitem
+                  a.footer__mid-menu-sublink(href="#") Features
+            li.footer__mid-menu-item
+              strong.footer__mid-menu-label(href="#") For teams
+              ul.list-reset.footer__mid-menu-sublist
+                li.footer__mid-menu-subitem
+                  a.footer__mid-menu-sublink(href="#") Pricig
+                li.footer__mid-menu-subitem
+                  a.footer__mid-menu-sublink(href="#") About Us
+        .footer__sub.footer__mid-item
+          strong.footer__sub-title Stay Connected
+          .footer__descrip
+            p The latest Emaus news, articles, and resources, sent straight to your inbox every month.
+          form.footer__form
+            input.input.footer__form-input(type="email" placeholder="Your email adderss")
+            button.button.button--secondary.footer__form-button(type="submit") Sign Up
+  .footer__bot
+    .container
+      span.footer__copyright &copy; 2023 Emaus, Made by DeoThemes
+

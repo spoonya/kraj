@@ -249,7 +249,7 @@ input[type=button] {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  color: #000;
+  color: rgba(0,0,0,.7);
 }
 
 button {
@@ -339,20 +339,11 @@ html {
   border-bottom: 1px solid #e7eaf0;
 }
 
-.text {
-  font-size: 16px;
-  line-height: 150%;
-  color: #000;
-}
-
-.text p:not(:last-child) {
-  margin-bottom: 15px;
-}
-
 .button {
   background: #ff3465;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 50px;
   font-weight: 500;
   text-align: center;
@@ -363,6 +354,12 @@ html {
 
 .button:hover {
   background: #ff0b46;
+}
+
+.button--secondary {
+  border-radius: 3px;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .button-round {
@@ -436,6 +433,131 @@ html {
   opacity: .7;
 }
 
+.footer {
+  background: #101523;
+  color: #a7afba;
+}
+
+.footer__top {
+  border-bottom: 1px solid #2c3242;
+}
+
+.footer__mid {
+  padding: 8rem 0 4rem;
+}
+
+.footer__mid-item {
+  max-width: 32.5rem;
+  width: 100%;
+}
+
+.footer__mid-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bot {
+  padding: 2.7rem;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+}
+
+.footer__menu-list {
+  display: flex;
+}
+
+.footer__menu-list a {
+  color: #a7afba;
+  transition: color .1s linear;
+}
+
+.footer__menu-list a:hover {
+  color: #fff;
+}
+
+.footer__menu-list li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #a7afba;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer__form-input {
+  margin-bottom: 2rem;
+}
+
+.footer__form-button,
+.footer__form-input {
+  min-height: 5.1rem;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__descrip {
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.footer__address {
+  padding-top: 2rem;
+  line-height: 1.4;
+  font-size: 2rem;
+}
+
+.footer__sub-title {
+  display: block;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.footer__mid-menu-list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 3rem;
+  font-family: Rubik,sans-serif;
+}
+
+.footer__mid-menu-subitem:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer__mid-menu-label {
+  display: block;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer__mid-menu-sublink {
+  color: #a7afba;
+  transition: color .1s linear;
+}
+
+.footer__mid-menu-sublink:hover {
+  color: #ff3465;
+}
+
 .menu ul {
   display: flex;
 }
@@ -454,10 +576,41 @@ html {
   color: #ff3465;
 }
 
+.input {
+  background: #fff;
+  border-radius: 3px;
+  padding: .9375em;
+  border: 1px solid transparent;
+  transition: border-color .1s linear;
+}
+
+.input:focus {
+  border-color: #ff3465;
+}
+
+.socials__list {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+.socials__item {
+  padding: 0 1rem;
+}
+
+.socials__item a:hover svg {
+  fill: #fff;
+}
+
+.socials__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #a7afba;
+  transition: fill .1s linear;
+}
+
 .intro {
   position: relative;
-  height: 100vh;
-  padding: 20rem 0;
+  padding: 5rem 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -477,6 +630,7 @@ html {
 .intro__inner {
   position: relative;
   z-index: 1;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -634,4 +788,61 @@ html {
   color: #656970;
   line-height: 1.8;
   font-size: 1.7rem;
+}
+
+.trial {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trial::after {
+  background: #2550de;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: .93;
+}
+
+.trial__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 63rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.trial__form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.trial__input {
+  margin-right: 1.5rem;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.trial__descrip {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.trial__title {
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+.trial__text {
+  font-size: 2rem;
 }

@@ -1,0 +1,30 @@
+.socials {
+}
+
+.socials__list {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+.socials__item {
+  padding: 0 1rem;
+
+  a {
+    &:hover {
+      svg {
+        fill: $cl-light-alpha;
+      }
+    }
+  }
+}
+
+.socials__icon {
+  svg {
+    width: 18px;
+    height: 18px;
+
+    fill: $cl-light-psi;
+
+    transition: fill 0.1s linear;
+  }
+}

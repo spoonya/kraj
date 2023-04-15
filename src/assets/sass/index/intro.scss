@@ -1,9 +1,7 @@
 .intro {
   position: relative;
 
-  height: 100vh;
-
-  padding: 20rem 0;
+  padding: 5rem 0;
 
   background-position: center;
   background-size: cover;
@@ -24,6 +22,8 @@
 .intro__inner {
   position: relative;
   z-index: 1;
+
+  height: 100vh;
 
   display: flex;
   justify-content: space-between;

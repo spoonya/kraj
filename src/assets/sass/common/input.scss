@@ -1,0 +1,13 @@
+.input {
+  border-radius: 3px;
+  background-color: $cl-light-alpha;
+  padding: em(15);
+
+  border: 1px solid transparent;
+
+  transition: border-color 0.1s linear;
+
+  &:focus {
+    border-color: $cl-brand-alpha;
+  }
+}

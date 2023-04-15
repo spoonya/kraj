@@ -48,9 +48,9 @@ block content
     section.feature.section.section-border
       .container
         .feature__inner
-          .feature__img
+          .feature__img(data-aos="fade-right" data-aos-duration="1000")
             img(src="assets/img/jpg/feature-1.jpg", width="570" height="377" alt="", loading="lazy")
-          .feature__descrip
+          .feature__descrip(data-aos="fade-left" data-aos-duration="1000")
             h2.title.feature__title Intuitive interface for collaboration
             .feature__text
               p Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme is a breeze. Our Theme is a very slick and clean e-commerce template with endless possibilities.
@@ -58,14 +58,14 @@ block content
     section.feature.feature--reverse.section.section-border
       .container
         .feature__inner
-          .feature__img
+          .feature__img(data-aos="fade-left" data-aos-duration="1000")
             img(src="assets/img/jpg/feature-2.jpg", width="570" height="377" alt="", loading="lazy")
-          .feature__descrip
+          .feature__descrip(data-aos="fade-right" data-aos-duration="1000")
             h2.title.feature__title Operate the software in real time from any device
             .feature__text
               p Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme is a breeze. Our Theme is a very slick and clean e-commerce template with endless possibilities.
 
-    section.gains.section.section-border
+    section.gains.section
       .container
         .gains__inner
           ul.list-reset.gains__list
@@ -81,3 +81,14 @@ block content
               h2.title.gains__title Great Analysis Tools
               .gains__text
                 p Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme is a breeze. Our Theme is a very slick and clean e-commerce template with endless possibilities.
+
+    section.trial.section(style="background-image: url(assets/img/jpg/newsletter-bg.jpg)")
+      .container
+        .trial__inner
+          .trial__descrip
+            h2.title.trial__title Ready to start a free 14 days trial?
+            .trial__text
+              p Create an account now and generate more leads
+          form.trial__form
+            input.input.trial__input(type="email" placeholder="Your email address")
+            button.button.button--secondary.trial__submit(type="submit") Sign Up
