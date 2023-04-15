@@ -1,0 +1,14 @@
+.menu {
+  ul {
+  }
+
+  a {
+    color: var(--light-alpha);
+
+    transition: color 0.1s linear;
+
+    &:hover {
+      color: var(--hover-alpha);
+    }
+  }
+}

@@ -1,1 +1,3 @@
-import * as sliders from './index.js';
+import { test } from './test.js';
+
+test();

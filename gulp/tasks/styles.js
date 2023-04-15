@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
-const sourcemaps = require('gulp-sourcemaps');
 const shorthand = require('gulp-shorthand');
 const autoprefixer = require('gulp-autoprefixer');
 const gulpStylelint = require('gulp-stylelint');
