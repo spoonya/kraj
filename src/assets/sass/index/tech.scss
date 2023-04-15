@@ -1,0 +1,25 @@
+.tech {
+}
+
+.tech__inner {
+  padding: 2rem 0;
+}
+
+.tech__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    width: 20%;
+    padding: 0 2rem;
+  }
+
+  a {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.gains {
+}
+
+.gains__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem 3rem;
+}
+
+.gains__icon {
+  margin-bottom: 2rem;
+
+  background-color: $cl-light-gamma;
+  border-radius: 50%;
+
+  padding: 2rem;
+
+  width: 72px;
+  height: 72px;
+
+  svg {
+    height: 32px;
+    width: 32px;
+
+    fill: $cl-brand-beta;
+  }
+}
+
+.gains__item {
+  max-width: 58.5rem;
+  width: 100%;
+}
+
+.gains__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.gains__text {
+  color: $cl-dark-gamma;
+  line-height: 1.8;
+  font-size: 1.7rem;
+}

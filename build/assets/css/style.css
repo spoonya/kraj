@@ -325,6 +325,20 @@ html {
   width: 1px;
 }
 
+.title {
+  font-family: Rubik,sans-serif;
+  letter-spacing: -.05em;
+  font-weight: 500;
+}
+
+.section {
+  padding: 10rem 0;
+}
+
+.section-border {
+  border-bottom: 1px solid #e7eaf0;
+}
+
 .text {
   font-size: 16px;
   line-height: 150%;
@@ -432,6 +446,7 @@ html {
 
 .menu a {
   color: #fff;
+  font-family: Rubik,sans-serif;
   transition: color .1s linear;
 }
 
@@ -495,4 +510,128 @@ html {
 .intro__img {
   max-width: 83.5rem;
   width: 100%;
+}
+
+.tech__inner {
+  padding: 2rem 0;
+}
+
+.tech__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech__list li {
+  width: 20%;
+  padding: 0 2rem;
+}
+
+.tech__list a {
+  transition: transform .2s ease;
+}
+
+.tech__list a:hover {
+  transform: scale(1.05);
+}
+
+.idea__inner {
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.idea__title {
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #656970;
+  margin-bottom: 3rem;
+}
+
+.idea__text {
+  text-align: center;
+  color: #656970;
+  line-height: 1.6;
+  font-size: 2.5rem;
+}
+
+.feature--reverse .feature__descrip {
+  order: -1;
+}
+
+.feature__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  align-items: center;
+}
+
+.feature__img {
+  max-width: 57rem;
+  width: 100%;
+}
+
+.feature__img img {
+  box-shadow: 0 28px 40px 0 rgba(154,161,171,.67);
+}
+
+.feature__descrip {
+  max-width: 55rem;
+  width: 100%;
+}
+
+.feature__title {
+  color: #353f58;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.feature__text {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #656970;
+}
+
+.feature__text p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.gains__list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 5rem 3rem;
+}
+
+.gains__icon {
+  background: #f7fbff;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  padding: 2rem;
+  width: 72px;
+  height: 72px;
+}
+
+.gains__icon svg {
+  height: 32px;
+  width: 32px;
+  fill: #3f48c4;
+}
+
+.gains__item {
+  max-width: 58.5rem;
+  width: 100%;
+}
+
+.gains__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.gains__text {
+  color: #656970;
+  line-height: 1.8;
+  font-size: 1.7rem;
 }
