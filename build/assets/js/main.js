@@ -200,9 +200,9 @@ function controlModal() {
     });
   });
   modals.forEach(function (modal) {
-    var wrapper = modal.querySelector('[data-modal-wrapper]');
+    var content = modal.querySelector('[data-modal-content]');
     modal.addEventListener('click', function (e) {
-      if (e.target === modal || e.target === wrapper) {
+      if (e.target !== content) {
         closeModal(modal);
       }
     });

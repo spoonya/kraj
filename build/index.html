@@ -47,16 +47,18 @@
         </div>
       </header>
       <div class="modal" id="modal-video">
-        <div class="modal__wrapper">
-          <div class="modal__content">
+        <div class="modal__scroll">
+          <div class="modal__wrapper">
             <button class="modal__button-close" aria-label="Закрыть" data-modal-close>
               <svg>
                 <use xlink:href="assets/img/svg/sprite.svg#close"></use>
               </svg>
             </button>
             <div class="modal__inner">
-              <div class="video-section">
-                <iframe class="video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-video></iframe>
+              <div class="modal__content" data-modal-content>
+                <div class="video-section">
+                  <iframe class="video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-video></iframe>
+                </div>
               </div>
             </div>
           </div>

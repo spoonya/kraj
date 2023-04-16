@@ -27,49 +27,46 @@
   }
 }
 
+.modal__scroll {
+  display: flex;
+
+  overflow-y: auto;
+  height: 100vh;
+  width: 100%;
+}
+
 .modal__wrapper {
   position: relative;
 
   max-width: 100rem;
   width: 100%;
 
-  margin: 0 15px;
+  padding: 2rem 0;
+
+  margin: auto;
 
   @include media-tablet-lg {
-    max-width: 90vw;
-
-    margin: 0;
+    max-width: 95vw;
   }
-}
-
-.modal__content {
-  @include scroll-el;
-
-  position: relative;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  max-height: 90vh;
 }
 
 .modal__inner {
   width: 100%;
 
-  padding: 7rem;
+  padding: 5rem;
 
   @include media-tablet-sm {
-    padding: 7rem 0 0;
+    padding: 5rem 0 0;
   }
 }
 
 .modal__button-close {
   position: absolute;
-  right: 2rem;
+  right: 4rem;
 
   svg {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
 
     stroke: $cl-light-psi;
 
@@ -83,7 +80,6 @@
   }
 
   @include media-tablet-sm {
-    top: 0;
     right: 0;
   }
 }

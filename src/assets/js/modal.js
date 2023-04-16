@@ -47,10 +47,10 @@ export function controlModal() {
   });
 
   modals.forEach((modal) => {
-    const wrapper = modal.querySelector('[data-modal-wrapper]');
+    const content = modal.querySelector('[data-modal-content]');
 
     modal.addEventListener('click', (e) => {
-      if (e.target === modal || e.target === wrapper) {
+      if (e.target !== content) {
         closeModal(modal);
       }
     });
