@@ -110,6 +110,10 @@ html {
   scroll-behavior: smooth;
 
   font-size: 62.5%;
+
+  @include media-tablet-lg {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -128,10 +132,18 @@ body {
 }
 
 .container {
-  max-width: 1360px;
-  padding: 0 30px;
+  max-width: 1420px;
+  padding: 0 60px;
   width: 100%;
   margin: 0 auto;
+
+  @include media-tablet-lg {
+    padding: 0 30px;
+  }
+
+  @include media-tablet-sm {
+    padding: 0 15px;
+  }
 }
 
 .page {

@@ -22,4 +22,11 @@
       transform: scale(1.05);
     }
   }
+
+  @include media-tablet-lg {
+    li {
+      width: 33.33333%;
+      padding: 0 1rem;
+    }
+  }
 }

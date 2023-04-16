@@ -1,9 +1,12 @@
 export const CLASSES = {
   active: 'active',
   loading: 'loading',
-  scrollHidden: 'scroll-hidden'
+  scrollHidden: 'scroll-hidden',
+  fixed: 'fixed',
+  open: 'open'
 };
 
 export const DOM = {
-  body: document.querySelector('body')
+  body: document.querySelector('body'),
+  header: document.querySelector('#header')
 };

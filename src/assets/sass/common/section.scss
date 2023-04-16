@@ -1,3 +1,7 @@
 .section {
   padding: 10rem 0;
+
+  @include media-tablet-lg {
+    padding: 5rem 0;
+  }
 }

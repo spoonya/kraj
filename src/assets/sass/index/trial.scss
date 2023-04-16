@@ -41,12 +41,22 @@
   align-items: stretch;
   justify-content: center;
   width: 100%;
+
+  @include media-phone-lg {
+    flex-direction: column;
+  }
 }
 
 .trial__input {
   margin-right: 1.5rem;
   max-width: 30rem;
   width: 100%;
+
+  @include media-phone-lg {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    max-width: unset;
+  }
 }
 
 .trial__descrip {
@@ -57,8 +67,18 @@
 .trial__title {
   font-size: 3.8rem;
   margin-bottom: 3rem;
+
+  @include media-tablet-sm {
+    font-size: 3rem;
+  }
 }
 
 .trial__text {
   font-size: 2rem;
+}
+
+.trial__submit {
+  @include media-phone-lg {
+    min-height: 5.1rem;
+  }
 }

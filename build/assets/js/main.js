@@ -86,14 +86,63 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/assets/js/burger.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/burger.js ***!
+  \*********************************/
+/*! exports provided: controlHeaderBurger */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"controlHeaderBurger\", function() { return controlHeaderBurger; });\n/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants.js */ \"./src/assets/js/constants.js\");\n/* harmony import */ var _helpers_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers/index.js */ \"./src/assets/js/helpers/index.js\");\n\n\nconst burgerBtn = document.querySelector('#burger-button');\n\nfunction toggleBurger() {\n  burgerBtn.addEventListener('click', function () {\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].body.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].scrollHidden);\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].open);\n    this.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].active);\n  });\n}\n\nfunction closeBurger() {\n  if (_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.contains(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].open)) {\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].body.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].scrollHidden);\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].open);\n    burgerBtn.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].active);\n  }\n\n  _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].fixed);\n}\n\nfunction closeBurgerOnMedia() {\n  if (!Object(_helpers_index_js__WEBPACK_IMPORTED_MODULE_1__[\"isMediaBreakpoint\"])()) closeBurger();\n}\n\nfunction lockHeaderOnScroll() {\n  if (Object(_helpers_index_js__WEBPACK_IMPORTED_MODULE_1__[\"isMediaBreakpoint\"])()) {\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].fixed, window.scrollY > 50);\n  }\n}\n\nfunction controlHeaderBurger() {\n  toggleBurger();\n  lockHeaderOnScroll();\n  window.addEventListener('scroll', lockHeaderOnScroll);\n  window.addEventListener('resize', closeBurgerOnMedia);\n}\n\n//# sourceURL=webpack:///./src/assets/js/burger.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/constants.js":
+/*!************************************!*\
+  !*** ./src/assets/js/constants.js ***!
+  \************************************/
+/*! exports provided: CLASSES, DOM */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"CLASSES\", function() { return CLASSES; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DOM\", function() { return DOM; });\nconst CLASSES = {\n  active: 'active',\n  loading: 'loading',\n  scrollHidden: 'scroll-hidden',\n  fixed: 'fixed',\n  open: 'open'\n};\nconst DOM = {\n  body: document.querySelector('body'),\n  header: document.querySelector('#header')\n};\n\n//# sourceURL=webpack:///./src/assets/js/constants.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/helpers/index.js":
+/*!****************************************!*\
+  !*** ./src/assets/js/helpers/index.js ***!
+  \****************************************/
+/*! exports provided: isMediaBreakpoint */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _is_media_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is-media.js */ \"./src/assets/js/helpers/is-media.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"isMediaBreakpoint\", function() { return _is_media_js__WEBPACK_IMPORTED_MODULE_0__[\"isMediaBreakpoint\"]; });\n\n\n\n//# sourceURL=webpack:///./src/assets/js/helpers/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/helpers/is-media.js":
+/*!*******************************************!*\
+  !*** ./src/assets/js/helpers/is-media.js ***!
+  \*******************************************/
+/*! exports provided: isMediaBreakpoint */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"isMediaBreakpoint\", function() { return isMediaBreakpoint; });\nfunction isMediaBreakpoint(breakpoint = 1023.98) {\n  const mediaBreakpoint = breakpoint;\n\n  if (document.documentElement.clientWidth > mediaBreakpoint) {\n    return false;\n  }\n\n  return true;\n}\n\n//# sourceURL=webpack:///./src/assets/js/helpers/is-media.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/main.js":
 /*!*******************************!*\
   !*** ./src/assets/js/main.js ***!
   \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("AOS.init({\n  once: true\n});\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burger.js */ \"./src/assets/js/burger.js\");\n\nAOS.init({\n  once: true,\n  disable: 'mobile'\n});\nObject(_burger_js__WEBPACK_IMPORTED_MODULE_0__[\"controlHeaderBurger\"])();\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
 
 /***/ })
 

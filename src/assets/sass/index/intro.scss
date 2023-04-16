@@ -1,7 +1,7 @@
 .intro {
   position: relative;
 
-  padding: 5rem 0;
+  padding: 10rem 0 5rem;
 
   background-position: center;
   background-size: cover;
@@ -17,22 +17,40 @@
     background-image: linear-gradient(180deg, #3f48c4 0%, #55a0e0 100%);
     opacity: 0.85;
   }
+
+  @include media-tablet-lg {
+    padding: 15rem 0 5rem;
+  }
 }
 
 .intro__inner {
   position: relative;
   z-index: 1;
 
-  height: 100vh;
+  min-height: calc(100vh - 15rem);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media-tablet-lg {
+    min-height: unset;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .intro__descrip {
   margin-right: 5rem;
   max-width: 50.6rem;
+  width: 100%;
+
+  @include media-tablet-lg {
+    max-width: unset;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .intro__titles {
@@ -44,6 +62,10 @@
   font-size: 3.8rem;
   line-height: 1.3;
   font-weight: 500;
+
+  @include media-tablet-sm {
+    font-size: 3rem;
+  }
 }
 
 .intro__buttons {
@@ -60,4 +82,9 @@
 .intro__img {
   max-width: 83.5rem;
   width: 100%;
+
+  @include media-tablet-lg {
+    margin: 0 auto;
+    max-width: 60rem;
+  }
 }

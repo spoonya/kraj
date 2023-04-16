@@ -19,4 +19,24 @@
       color: $cl-brand-alpha;
     }
   }
+
+  @include media-tablet-lg {
+    ul {
+      @include media-tablet-lg {
+        flex-direction: column;
+      }
+    }
+
+    a {
+      color: $cl-dark-alpha;
+      font-size: 3rem;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }

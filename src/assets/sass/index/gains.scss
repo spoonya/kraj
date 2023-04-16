@@ -4,7 +4,11 @@
 .gains__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem 3rem;
+  grid-gap: 5rem;
+
+  @include media-tablet-sm {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gains__icon {
@@ -29,6 +33,10 @@
 .gains__item {
   max-width: 58.5rem;
   width: 100%;
+
+  @include media-tablet-sm {
+    max-width: unset;
+  }
 }
 
 .gains__title {

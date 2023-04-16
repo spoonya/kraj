@@ -17,28 +17,32 @@
 
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__inner">
             <div class="header__left">
               <a class="logo header__logo" href="index.html" aria-label="home">
                 <img src="assets/img/png/logo.png" width="81" height="15" alt="">
               </a>
-              <nav class="menu">
-                <ul class="list-reset">
-                  <li><a href="#">Home</a>
-                  </li>
-                  <li><a href="#">Blog</a>
-                  </li>
-                  <li><a href="#">Pages</a>
-                  </li>
-                  <li><a href="#">Pricing</a>
-                  </li>
-                </ul>
-              </nav>
+              <div class="header__menu">
+                <nav class="menu">
+                  <ul class="list-reset">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="#">Pages</a>
+                    </li>
+                    <li><a href="#">Pricing</a>
+                    </li>
+                  </ul>
+                </nav><a class="button header__menu-button" href="#">Try Fre</a>
+              </div>
             </div>
             <div class="header__right"><a class="button" href="#">Try Free</a>
             </div>
+            <button class="burger-button" id="burger-button" aria-label="меню"><span></span>
+            </button>
           </div>
         </div>
       </header>
