@@ -1,0 +1,14 @@
+@mixin scroll-el {
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $cl-light-alpha;
+    border-radius: 1rem;
+  }
+
+  scrollbar-color: $cl-light-alpha transparent;
+  scrollbar-width: thin;
+}

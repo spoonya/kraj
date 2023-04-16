@@ -36,7 +36,7 @@
                     <li><a href="#">Pricing</a>
                     </li>
                   </ul>
-                </nav><a class="button header__menu-button" href="#">Try Fre</a>
+                </nav><a class="button header__menu-button" href="#">Try Free</a>
               </div>
             </div>
             <div class="header__right"><a class="button" href="#">Try Free</a>
@@ -46,6 +46,22 @@
           </div>
         </div>
       </header>
+      <div class="modal" id="modal-video">
+        <div class="modal__wrapper">
+          <div class="modal__content">
+            <button class="modal__button-close" aria-label="Закрыть" data-modal-close>
+              <svg>
+                <use xlink:href="assets/img/svg/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <div class="modal__inner">
+              <div class="video-section">
+                <iframe class="video" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-video></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <main>
         <section class="intro" style="background-image: url(assets/img/jpg/intro.jpg)">
           <div class="container">
@@ -55,7 +71,7 @@
                   <h1 class="title intro__title">New platform for managing your business expenses</h1>
                 </div>
                 <div class="intro__buttons"><a class="button intro__button" href="#">Try it Now</a>
-                  <button class="button-round" type="button">
+                  <button class="button-round" type="button" data-modal-target="modal-video" data-video-src="https://www.youtube.com/embed/jfKfPfyJRdk">
                     <div class="button-round__styled">
                       <svg class="button-round__icon">
                         <use xlink:href="assets/img/svg/sprite.svg#play"></use>
@@ -75,27 +91,27 @@
             <div class="tech__inner">
               <ul class="list-reset tech__list">
                 <li>
-                  <a href="#">
+                  <a href="#" aria-label="github">
                     <img src="assets/img/png/tech-1.png" width="195" height="103" alt="" loading="lazy">
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" aria-label="jquery">
                     <img src="assets/img/png/tech-2.png" width="195" height="103" alt="" loading="lazy">
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" aria-label="wordpress">
                     <img src="assets/img/png/tech-3.png" width="195" height="103" alt="" loading="lazy">
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" aria-label="node.js">
                     <img src="assets/img/png/tech-4.png" width="195" height="103" alt="" loading="lazy">
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" aria-label="sass">
                     <img src="assets/img/png/tech-5.png" width="195" height="103" alt="" loading="lazy">
                   </a>
                 </li>

@@ -1,0 +1,8 @@
+#modal-video.modal
+  .modal__wrapper
+    .modal__content
+      button.modal__button-close(aria-label="Закрыть" data-modal-close)
+        +icon('', 'close')
+      .modal__inner
+        .video-section
+          iframe.video(src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-video)

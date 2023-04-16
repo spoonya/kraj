@@ -81,69 +81,148 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/assets/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/assets/js/burger.js":
-/*!*********************************!*\
-  !*** ./src/assets/js/burger.js ***!
-  \*********************************/
-/*! exports provided: controlHeaderBurger */
+/******/ ([
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"controlHeaderBurger\", function() { return controlHeaderBurger; });\n/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants.js */ \"./src/assets/js/constants.js\");\n/* harmony import */ var _helpers_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers/index.js */ \"./src/assets/js/helpers/index.js\");\n\n\nconst burgerBtn = document.querySelector('#burger-button');\n\nfunction toggleBurger() {\n  burgerBtn.addEventListener('click', function () {\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].body.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].scrollHidden);\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].open);\n    this.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].active);\n  });\n}\n\nfunction closeBurger() {\n  if (_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.contains(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].open)) {\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].body.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].scrollHidden);\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].open);\n    burgerBtn.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].active);\n  }\n\n  _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.remove(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].fixed);\n}\n\nfunction closeBurgerOnMedia() {\n  if (!Object(_helpers_index_js__WEBPACK_IMPORTED_MODULE_1__[\"isMediaBreakpoint\"])()) closeBurger();\n}\n\nfunction lockHeaderOnScroll() {\n  if (Object(_helpers_index_js__WEBPACK_IMPORTED_MODULE_1__[\"isMediaBreakpoint\"])()) {\n    _constants_js__WEBPACK_IMPORTED_MODULE_0__[\"DOM\"].header.classList.toggle(_constants_js__WEBPACK_IMPORTED_MODULE_0__[\"CLASSES\"].fixed, window.scrollY > 50);\n  }\n}\n\nfunction controlHeaderBurger() {\n  toggleBurger();\n  lockHeaderOnScroll();\n  window.addEventListener('scroll', lockHeaderOnScroll);\n  window.addEventListener('resize', closeBurgerOnMedia);\n}\n\n//# sourceURL=webpack:///./src/assets/js/burger.js?");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-/***/ }),
+// CONCATENATED MODULE: ./src/assets/js/constants.js
+var CLASSES = {
+  active: 'active',
+  loading: 'loading',
+  scrollHidden: 'scroll-hidden',
+  fixed: 'fixed',
+  open: 'open',
+  modal: 'modal'
+};
+var DOM = {
+  body: document.querySelector('body'),
+  header: document.querySelector('#header')
+};
+// CONCATENATED MODULE: ./src/assets/js/helpers/is-media.js
+function isMediaBreakpoint() {
+  var breakpoint = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1023.98;
+  var mediaBreakpoint = breakpoint;
 
-/***/ "./src/assets/js/constants.js":
-/*!************************************!*\
-  !*** ./src/assets/js/constants.js ***!
-  \************************************/
-/*! exports provided: CLASSES, DOM */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  if (document.documentElement.clientWidth > mediaBreakpoint) {
+    return false;
+  }
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"CLASSES\", function() { return CLASSES; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DOM\", function() { return DOM; });\nconst CLASSES = {\n  active: 'active',\n  loading: 'loading',\n  scrollHidden: 'scroll-hidden',\n  fixed: 'fixed',\n  open: 'open'\n};\nconst DOM = {\n  body: document.querySelector('body'),\n  header: document.querySelector('#header')\n};\n\n//# sourceURL=webpack:///./src/assets/js/constants.js?");
+  return true;
+}
+// CONCATENATED MODULE: ./src/assets/js/helpers/index.js
 
-/***/ }),
+// CONCATENATED MODULE: ./src/assets/js/burger.js
 
-/***/ "./src/assets/js/helpers/index.js":
-/*!****************************************!*\
-  !*** ./src/assets/js/helpers/index.js ***!
-  \****************************************/
-/*! exports provided: isMediaBreakpoint */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _is_media_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is-media.js */ \"./src/assets/js/helpers/is-media.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"isMediaBreakpoint\", function() { return _is_media_js__WEBPACK_IMPORTED_MODULE_0__[\"isMediaBreakpoint\"]; });\n\n\n\n//# sourceURL=webpack:///./src/assets/js/helpers/index.js?");
+var burgerBtn = document.querySelector('#burger-button');
 
-/***/ }),
+function toggleBurger() {
+  burgerBtn.addEventListener('click', function () {
+    DOM.body.classList.toggle(CLASSES.scrollHidden);
+    DOM.header.classList.toggle(CLASSES.open);
+    this.classList.toggle(CLASSES.active);
+  });
+}
 
-/***/ "./src/assets/js/helpers/is-media.js":
-/*!*******************************************!*\
-  !*** ./src/assets/js/helpers/is-media.js ***!
-  \*******************************************/
-/*! exports provided: isMediaBreakpoint */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+function closeBurger() {
+  if (DOM.header.classList.contains(CLASSES.open)) {
+    DOM.body.classList.remove(CLASSES.scrollHidden);
+    DOM.header.classList.remove(CLASSES.open);
+    burgerBtn.classList.remove(CLASSES.active);
+  }
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"isMediaBreakpoint\", function() { return isMediaBreakpoint; });\nfunction isMediaBreakpoint(breakpoint = 1023.98) {\n  const mediaBreakpoint = breakpoint;\n\n  if (document.documentElement.clientWidth > mediaBreakpoint) {\n    return false;\n  }\n\n  return true;\n}\n\n//# sourceURL=webpack:///./src/assets/js/helpers/is-media.js?");
+  DOM.header.classList.remove(CLASSES.fixed);
+}
 
-/***/ }),
+function closeBurgerOnMedia() {
+  if (!isMediaBreakpoint()) closeBurger();
+}
 
-/***/ "./src/assets/js/main.js":
-/*!*******************************!*\
-  !*** ./src/assets/js/main.js ***!
-  \*******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+function lockHeaderOnScroll() {
+  if (isMediaBreakpoint()) {
+    DOM.header.classList.toggle(CLASSES.fixed, window.scrollY > 50);
+  }
+}
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burger.js */ \"./src/assets/js/burger.js\");\n\nAOS.init({\n  once: true,\n  disable: 'mobile'\n});\nObject(_burger_js__WEBPACK_IMPORTED_MODULE_0__[\"controlHeaderBurger\"])();\n\n//# sourceURL=webpack:///./src/assets/js/main.js?");
+function controlHeaderBurger() {
+  toggleBurger();
+  lockHeaderOnScroll();
+  window.addEventListener('scroll', lockHeaderOnScroll);
+  window.addEventListener('resize', closeBurgerOnMedia);
+}
+// CONCATENATED MODULE: ./src/assets/js/modal.js
+
+
+function openModal(modal) {
+  if (!modal) return;
+  DOM.body.classList.add(CLASSES.scrollHidden);
+  modal.classList.add(CLASSES.active);
+}
+
+function closeModal(modal) {
+  if (!modal) return;
+  modal.classList.remove(CLASSES.active);
+  DOM.body.classList.remove(CLASSES.scrollHidden);
+  var video = modal.querySelector('[data-video]');
+
+  if (video) {
+    video.setAttribute('src', '');
+  }
+}
+
+function setVideo(src, modal) {
+  var video = modal.querySelector('[data-video]');
+  if (!video) return;
+  video.setAttribute('src', src);
+}
+
+function controlModal() {
+  var openModalButtons = document.querySelectorAll('[data-modal-target]');
+  var closeModalButtons = document.querySelectorAll('[data-modal-close]');
+  var modals = document.querySelectorAll(".".concat(CLASSES.modal));
+  openModalButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var modal = document.getElementById(button.dataset.modalTarget);
+      var src = button.dataset.videoSrc;
+
+      if (src) {
+        setVideo(src, modal);
+      }
+
+      openModal(modal);
+    });
+  });
+  modals.forEach(function (modal) {
+    var wrapper = modal.querySelector('[data-modal-wrapper]');
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal || e.target === wrapper) {
+        closeModal(modal);
+      }
+    });
+  });
+  closeModalButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var modal = button.closest(".".concat(CLASSES.modal));
+      closeModal(modal);
+    });
+  });
+}
+// CONCATENATED MODULE: ./src/assets/js/main.js
+
+
+AOS.init({
+  once: true,
+  disable: 'mobile'
+});
+controlHeaderBurger();
+controlModal();
 
 /***/ })
-
-/******/ });
+/******/ ]);

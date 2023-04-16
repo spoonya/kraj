@@ -3,7 +3,8 @@ export const CLASSES = {
   loading: 'loading',
   scrollHidden: 'scroll-hidden',
   fixed: 'fixed',
-  open: 'open'
+  open: 'open',
+  modal: 'modal'
 };
 
 export const DOM = {

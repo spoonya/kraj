@@ -1,6 +1,7 @@
 @import 'utils/vars';
 
 @import 'mixins/media';
+@import 'mixins/scroll-el';
 @import 'mixins/outline';
 
 @import 'functions/em';
@@ -18,6 +19,8 @@
 @import 'common/menu';
 @import 'common/input';
 @import 'common/socials';
+@import 'common/modal';
+@import 'common/video';
 
 @import 'index/intro';
 @import 'index/tech';

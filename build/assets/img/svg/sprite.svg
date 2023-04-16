@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="fb" viewBox="-5 0 20 20">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="close" viewBox="0 0 24 24">
+    <path d="m18 18-6-6m0 0L6 6m6 6 6-6m-6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="fb" viewBox="-5 0 20 20">
     <path d="M6.821 20v-9h2.733L10 7H6.821V5.052C6.821 4.022 6.848 3 8.287 3h1.458V.14c0-.043-1.253-.14-2.52-.14C4.58 0 2.924 1.657 2.924 4.7V7H0v4h2.923v9h3.898Z" fill-rule="evenodd"/>
 </symbol><symbol id="graph" viewBox="0 0 1800 1800">
     <g>
