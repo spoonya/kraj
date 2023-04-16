@@ -513,6 +513,8 @@ html {
 
 .header__menu-button {
   display: none;
+  font-size: 2.3rem;
+  min-height: 4rem;
   margin-top: 4rem;
   width: 100%;
 }
